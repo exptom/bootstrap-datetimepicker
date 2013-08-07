@@ -629,6 +629,9 @@
                 this.fillDate();
                 this.set();
                 this.notifyChange();
+                if (this.options.autoClose) {
+                    this.hide();
+                }
               }
               break;
           }
@@ -1086,7 +1089,8 @@
     });
   };
 
-  $.fn.datetimepicker.defaults = {
+$.fn.datetimepicker.defaults = {
+    autoClose: false,
     maskInput: false,
     pickDate: true,
     pickTime: true,
