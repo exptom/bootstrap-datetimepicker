@@ -156,7 +156,6 @@
       this.widget.hide();
       this.viewMode = this.startViewMode;
       this.showMode();
-      this.set();
       this.$element.trigger({
         type: 'hide',
         date: this._date
